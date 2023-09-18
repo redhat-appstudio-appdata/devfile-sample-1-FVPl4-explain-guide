@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-wswn
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhn-support-tshearon-tenant/devfile-sample-1/devfile-sample-wswn@sha256:ac4d52bca6f278abec5e824ec488f5cc02c78a99bca227aa00a7a9d5813552ac
+        name: my-nodejs
+        resources: {}
+status: {}
